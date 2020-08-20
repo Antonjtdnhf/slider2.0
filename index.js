@@ -17,8 +17,8 @@ const slider12 = {
 
         this.scrollLeftButton = document.getElementById("scrollingLeft")
         this.scrollRightButton = document.getElementById("scrollingRight")
-        this.scrollLeftButton.addEventListener("click", function(e) {that.onScrollLeft(e)})
-        this.scrollRightButton.addEventListener("click", function(e) {that.onScrollRight(e)})
+        this.scrollLeftButton.addEventListener("click", (e) => {this.onScrollLeft(e)})
+        this.scrollRightButton.addEventListener("click", (e) => {this.onScrollRight(e)})
 
         this.scrollTimer = setInterval(function() {that.onScrollRight()}, scrollingIntervalTimeout)
         this.scrollingIntervalTimeout = scrollingIntervalTimeout
